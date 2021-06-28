@@ -13,7 +13,7 @@ public class App {
 			
 			SessionFactory factory = config.configure().buildSessionFactory();
 			Session session = factory.openSession();
-			
+			  
 			Transaction transaction = session.beginTransaction();
 			Employee emp = new Employee("Sonu", 10.5);
 			session.save(emp); // insert
