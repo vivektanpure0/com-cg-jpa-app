@@ -25,7 +25,7 @@ public class Employee {
 	}
 
 	public Employee(String name, double salary) {
-		super();
+		super();  
 		this.name = name;
 		this.salary = salary;
 	}
