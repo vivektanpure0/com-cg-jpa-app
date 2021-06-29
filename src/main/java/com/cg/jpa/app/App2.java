@@ -20,17 +20,17 @@ public class App2 {
 				transaction.commit();
 				Department d1;
 				
-				d1 = session.get(Department.class, 1); // select
+				d1 = session.get(Department.class, 13); // select
 				System.out.println(d1.toString()); 
 				session.evict(d1);
 				
-				d1.setName("Sales");
-				session.update(d1); // update
-				d1 = session.get(Department.class, 10);
-				System.out.println(d1.toString());
-				session.delete(d1); // delete
-				d1 = session.get(Department.class, 10);
-				System.out.println(d1.toString());
+//				d1.setName("Sales");
+//				session.update(d1); // update
+//				d1 = session.get(Department.class, 10);
+//				System.out.println(d1.toString());
+//				session.delete(d1); // delete
+//				d1 = session.get(Department.class, 10);
+//				System.out.println(d1.toString());
 				session.close();
 				factory.close();
 			} catch (Exception ex) {

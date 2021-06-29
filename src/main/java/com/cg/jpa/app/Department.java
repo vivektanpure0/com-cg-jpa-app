@@ -9,24 +9,24 @@ public class Department {
 	@Id
 	@Column(name = "department_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private int did;
 
 	@Column(name = "department_name", length = 128, nullable = false)
-	private String name;
+	private String dname;
 
 	@Column(name = "department_city", length = 128, nullable = false)
 	private String city;
 	
 	public Department(int id, String name, String city) {
 		super();
-		this.id = id;
-		this.name = name;
+		this.did = id;
+		this.dname = name;
 		this.city = city;
 	}
 
 	public Department(String name, String city) {
 		super();  
-		this.name = name;
+		this.dname = name;
 		this.city = city;
 	}
 	
@@ -35,19 +35,19 @@ public class Department {
 	}
 	
 	public int getId() {
-		return id;
+		return did;
 	}
 
 	public void setId(int id) {
-		this.id = id;
+		this.did = id;
 	}
 
 	public String getName() {
-		return name;
+		return dname;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.dname = name;
 	}
 
 	public String getCity() {
@@ -60,7 +60,7 @@ public class Department {
 	
 	@Override
 	public String toString() {
-		return "Department [id=" + id + ", name=" + name + ", city=" + city + "]";
+		return "Department [id=" + did + ", name=" + dname + ", city=" + city + "]";
 	}
 
 }

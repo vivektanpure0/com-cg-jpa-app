@@ -15,6 +15,7 @@
 		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 		<!-- <property name="hibernate.show_sql">true</property> <property name="hibernate.format_sql">true</property> -->
 		<mapping class="com.cg.jpa.app.Department"></mapping>
+		<mapping class="com.cg.jpa.app.Employee"></mapping>
 	</session-factory>
 </hibernate-configuration>
 
