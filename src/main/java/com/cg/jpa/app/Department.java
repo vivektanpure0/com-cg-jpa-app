@@ -7,14 +7,14 @@ import javax.persistence.*;
 public class Department {
 
 	@Id
-	@Column(name = "did")
+	@Column(name = "department_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
-	@Column(name = "dname", length = 128, nullable = false)
+	@Column(name = "department_name", length = 128, nullable = false)
 	private String name;
 
-	@Column(name = "city", length = 128, nullable = false)
+	@Column(name = "department_city", length = 128, nullable = false)
 	private String city;
 	
 	public Department(int id, String name, String city) {
