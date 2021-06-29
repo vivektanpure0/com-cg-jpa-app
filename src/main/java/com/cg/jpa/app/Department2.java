@@ -30,7 +30,7 @@ public class Department2 {
 		this.city = city;
 	}
 	
-	public Department2() {
+	public Department2() { 
 		super();
 	}
 	

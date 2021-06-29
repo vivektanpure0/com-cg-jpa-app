@@ -15,7 +15,7 @@ public class App2 {
 				Session session = factory.openSession();
 				  
 				Transaction transaction = session.beginTransaction();
-				Department2 dept = new Department2("HR", "Hyderabad");
+			 	Department2 dept = new Department2("HR", "Hyderabad");
 				session.save(dept); // insert
 				transaction.commit();
 				Department2 d1;
@@ -38,6 +38,6 @@ public class App2 {
 			}
 			System.out.println("End");
 		}
-	}
+	} 
 
 

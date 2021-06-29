@@ -34,7 +34,7 @@ public class Employee2 {
 		super();
 	}
 
-	public int getId() {
+	public int getId() { 
 		return id;
 	}
 
