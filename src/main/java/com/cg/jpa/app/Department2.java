@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "cg_dep")
-public class Department {
+public class Department2 {
 
 	@Id
 	@Column(name = "department_id")
@@ -17,20 +17,20 @@ public class Department {
 	@Column(name = "department_city", length = 128, nullable = false)
 	private String city;
 	
-	public Department(int id, String name, String city) {
+	public Department2(int id, String name, String city) {
 		super();
 		this.did = id;
 		this.dname = name;
 		this.city = city;
 	}
 
-	public Department(String name, String city) {
+	public Department2(String name, String city) {
 		super();  
 		this.dname = name;
 		this.city = city;
 	}
 	
-	public Department() {
+	public Department2() {
 		super();
 	}
 	

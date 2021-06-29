@@ -15,12 +15,12 @@ public class App2 {
 				Session session = factory.openSession();
 				  
 				Transaction transaction = session.beginTransaction();
-				Department dept = new Department("HR", "Hyderabad");
+				Department2 dept = new Department2("HR", "Hyderabad");
 				session.save(dept); // insert
 				transaction.commit();
-				Department d1;
+				Department2 d1;
 				
-				d1 = session.get(Department.class, 13); // select
+				d1 = session.get(Department2.class, 13); // select
 				System.out.println(d1.toString()); 
 				session.evict(d1);
 				
