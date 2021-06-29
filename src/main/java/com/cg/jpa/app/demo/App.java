@@ -3,11 +3,6 @@ package com.cg.jpa.app.demo;
 import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 
-/**
- * 
- * @author Vaman
- *
- */
 
 public class App {
 	public static void main(String[] args) {
@@ -37,6 +32,6 @@ public class App {
 		session.close();
 		factory.close();
 
-		System.out.println("End");
+		System.out.println("End");     
 	}
 } 
